@@ -1,0 +1,278 @@
+@import "./mediaq2";
+
+/* Index pag */
+
+
+.pideYa {
+    &__contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            font-size: 50px;
+            @include tablet {
+                font-size: 40px;
+            }
+        }
+        a {
+            img {
+                width: 150px;
+                padding: 5px;
+                @include tablet {
+                    width: 100px;
+                }
+                }
+            }
+        }
+        a:hover {
+            animation: shakeY;
+            animation-duration: 2s;
+        }
+    }
+
+    .ejemplosComidas div {
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+/* Menu pag */
+
+.menuInicio {
+    &__contenedor {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 600px;
+            transition: 3s;
+            &:hover {
+                width: 670px;
+            }
+            @include laptop {
+                width: 450px;
+            }
+            @include tablet {
+                width: 300px;
+            }
+            @include movil {
+                width: 270px;
+            }
+        }
+    }
+    &__lista {
+        text-align: center;
+        padding: 10px;
+        li {
+            font-size: 23px;
+        }
+    }
+}
+
+/* Menu Vegano pag */
+
+
+
+.menuVegano {
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 700px;
+            padding: 40px;
+            @include laptop {
+                width: 450px;
+            }
+            @include tablet {
+                width: 350px;
+            }
+            @include movil {
+                width: 300px;
+            }
+        }
+    }
+
+    &__platos {
+        ul {
+            padding: 40px;
+            list-style: none;
+            li {
+                font-size: 20px;
+                color: #002921;
+                transition: 2s;
+                padding: 5px;
+                transition: 1.5s;
+                text-align: center;
+                &:hover {
+                    font-weight: bold;
+                    padding: 15px;
+                    font-size: 20px;
+                    text-shadow: 2px 2px 2px gray;
+                }
+            }
+        }
+    }
+}
+
+$coloresveg: (
+    rosa: rgb(254,67,101),
+    salmon: rgb(252,157,154),
+    pantone: #BF4630,
+    verde: rgb(131,175,155),
+    azul: #0FB9F2,
+);
+
+@each $name, $color in $coloresveg {
+    .dia--#{$name} {
+        color: $color;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+/* Encuéntranos Pag */
+
+.iframe {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+    &__lista {
+        padding: 50px;
+        list-style: none;
+    }
+}
+
+.envios {
+    &__texto {
+        margin-top: 60px;
+    }
+
+    &__contenedor {
+        display: flex;
+        justify-content: center;
+
+        img {
+            padding: 20px;
+            @include tablet {
+                width: 450px;
+            }
+            @include movil {
+                width: 300px;
+            }
+        }
+    }
+}
+
+.contactos {
+    &__contenedor {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 500px;
+            @include tablet {
+                width: 250px;
+            }
+        }
+    }
+}
+
+.contenedor {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    color: white;
+
+    .Contact-Wrapper {
+        background: #41393e;
+
+        .contact-form {
+            form {
+                background: #222222;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                button {
+                    background: #eda2c0;
+                    color: #fff;
+                    border: 0;
+                    text-transform: uppercase;
+                    padding: 1em;
+                }
+                p {
+                    margin: 0;
+                    padding: 1em;
+                }
+                .block {
+                    grid-column: 1 / 3;
+                }
+            }
+            >* {
+                padding: 1em;
+            }
+        }
+
+        .contact-info {
+            background: #000;
+
+            ul {
+                list-style: none;
+            }
+
+        }
+    }
+
+    .contact-form form button,
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: none;
+        outline: 0;
+        color: #fff;
+        border-bottom: 1px solid #eda2c0;
+    }
+
+    .contact-form form button:hover,
+    .contact-form form button:focus {
+        background: #8e4162;
+        color: #fff;
+        transition: background-color 1s ease-out;
+        outline: 0;
+    }
+
+
+
+    .contact-info ul,
+    .contact-info p {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+
+}
+
+/* Preguntas frecuentes Pag */
+
+.pfContenedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__imagen {
+        width: 500px;
+        @include tablet {
+            width: 400px;
+        }
+        @include movil {
+            width: 350px;
+        }
+    }
+}

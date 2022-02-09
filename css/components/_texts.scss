@@ -1,0 +1,59 @@
+@import "./mediaq2";
+
+.tituloPag {
+    color: #8E4162;
+    font-size: 50px;
+    font-style: italic;
+    text-align-last: center;
+    text-transform: capitalize;
+    word-spacing: 30px;
+    margin-top: 70px;
+    text-shadow: 3px 3px 4px #000;
+    @include tablet {
+        font-size: 40px;
+    }
+    @include movil {
+        font-size: 36px;
+    }
+}
+
+.titulosDoc {
+    font-size: 45px;
+    text-align: center;
+    padding: 30px;
+    color: #923c61;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.textosComunes {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.subtitulos {
+    font-size: 30px;
+    font-weight: italic;
+    text-align: center;
+    padding: 15px;
+    @include tablet {
+        font-size: 20px;
+    }
+}
+
+
+
+.subtitulos2 {
+    @extend .subtitulos;
+    padding: 30px;
+    color: #41393e;
+}
+
+.textosComunes2 {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+
+}
