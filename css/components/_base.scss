@@ -1,0 +1,26 @@
+@import "./mediaq2";
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#EEF8FB, #bf9aca);
+}
+
+header img {
+    @include tablet {
+        width: 200px;
+    }
+    @include movil {
+        width: 175px;
+    }
+}
+
+@for $i from 1 through 3 {
+    .pa-#{$i} { padding: 2em * $i;}
+}
