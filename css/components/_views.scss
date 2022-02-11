@@ -175,23 +175,28 @@ $coloresveg: (
 }
 
 .contactos {
-    &__contenedor {
-        display: flex;
-        justify-content: center;
-
-        img {
-            width: 500px;
-            @include tablet {
-                width: 250px;
-            }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 550px;
+        @include movil {
+            width: 220px;
         }
+        @include laptop {
+            width: 400px;
+        }
+    }
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .contenedor {
     max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 1.5em;
     color: white;
 
