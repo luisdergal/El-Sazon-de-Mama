@@ -77,45 +77,35 @@
 
 /* Menu Vegano pag */
 
-
-
 .menuVegano {
-    &__img {
+    background: url(../../media/images/hamburguesaveganablur.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__contenedor {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
+        align-content: center;
         img {
-            width: 700px;
-            padding: 40px;
-            @include laptop {
-                width: 450px;
-            }
-            @include tablet {
-                width: 350px;
-            }
-            @include movil {
-                width: 300px;
-            }
+            width: 140px;
         }
     }
-
     &__platos {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
         ul {
-            padding: 40px;
             list-style: none;
+            border: 2px solid #f1f1f1;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.4);
             li {
                 font-size: 20px;
-                color: #002921;
+                color: antiquewhite;
                 transition: 2s;
                 padding: 5px;
                 transition: 1.5s;
                 text-align: center;
-                &:hover {
-                    font-weight: bold;
-                    padding: 15px;
-                    font-size: 20px;
-                    text-shadow: 2px 2px 2px gray;
-                }
             }
         }
     }

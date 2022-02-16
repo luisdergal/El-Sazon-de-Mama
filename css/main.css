@@ -68,7 +68,7 @@ body {
   text-shadow: 2px 2px 2px #000;
 }
 
-.textosComunes {
+.textosComunes, .textosComunes2W, .textosComunesW {
   text-align: center;
   font-size: 18px;
   padding: 10px;
@@ -85,6 +85,25 @@ body {
   .subtitulos, .subtitulos2 {
     font-size: 20px;
   }
+}
+
+.textosComunes2W {
+  color: antiquewhite;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-size: 19px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: contain;
+  width: 65%;
+}
+
+.textosComunesW {
+  color: antiquewhite;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .subtitulos2 {
@@ -228,62 +247,52 @@ body {
 }
 
 /* Menu Vegano pag */
-.menuVegano__img {
+.menuVegano {
+  background: url(../../media/images/hamburguesaveganablur.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menuVegano__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.menuVegano__img img {
-  width: 700px;
-  padding: 40px;
+.menuVegano__contenedor img {
+  width: 140px;
 }
 
-@media screen and (max-width: 982px) {
-  .menuVegano__img img {
-    width: 450px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .menuVegano__img img {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .menuVegano__img img {
-    width: 300px;
-  }
+.menuVegano__platos {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .menuVegano__platos ul {
-  padding: 40px;
   list-style: none;
+  border: 2px solid #f1f1f1;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .menuVegano__platos ul li {
   font-size: 20px;
-  color: #002921;
+  color: antiquewhite;
   -webkit-transition: 2s;
   transition: 2s;
   padding: 5px;
   -webkit-transition: 1.5s;
   transition: 1.5s;
   text-align: center;
-}
-
-.menuVegano__platos ul li:hover {
-  font-weight: bold;
-  padding: 15px;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px gray;
 }
 
 .dia--rosa {
