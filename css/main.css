@@ -95,6 +95,8 @@ body {
   font-style: italic;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
+  background-size: contain;
+  width: 65%;
 }
 
 .textosComunesW {
@@ -249,6 +251,30 @@ body {
   background: url(../../media/images/hamburguesaveganablur.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menuVegano__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.menuVegano__contenedor img {
+  width: 140px;
+}
+
+.menuVegano__platos {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .menuVegano__platos ul {
@@ -256,7 +282,6 @@ body {
   border: 2px solid #f1f1f1;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 2;
 }
 
 .menuVegano__platos ul li {
@@ -268,13 +293,6 @@ body {
   -webkit-transition: 1.5s;
   transition: 1.5s;
   text-align: center;
-}
-
-.menuVegano__platos ul li:hover {
-  font-weight: bold;
-  padding: 15px;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px gray;
 }
 
 .dia--rosa {

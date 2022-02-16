@@ -81,13 +81,24 @@
     background: url(../../media/images/hamburguesaveganablur.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    &__contenedor {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        img {
+            width: 140px;
+        }
+    }
     &__platos {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
         ul {
             list-style: none;
             border: 2px solid #f1f1f1;
             background-color: rgb(0,0,0);
             background-color: rgba(0,0,0, 0.4);
-            z-index: 2; 
             li {
                 font-size: 20px;
                 color: antiquewhite;
@@ -95,12 +106,6 @@
                 padding: 5px;
                 transition: 1.5s;
                 text-align: center;
-                &:hover {
-                    font-weight: bold;
-                    padding: 15px;
-                    font-size: 20px;
-                    text-shadow: 2px 2px 2px gray;
-                }
             }
         }
     }
