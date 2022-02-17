@@ -293,17 +293,56 @@ $coloresveg: (
 
 /* Preguntas frecuentes Pag */
 
-.pfContenedor {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    &__imagen {
-        width: 500px;
+.preguntasInicio{
+    p {
         @include tablet {
-            width: 400px;
+            font-size: 19px;
         }
         @include movil {
-            width: 350px;
+            font-size: 14px;
+        }
+    }
+    h1 {
+        @include tablet {
+            font-size: 30px;
+        }
+    }
+    h2 {
+        @include tablet {
+            font-size: 16px;
+        }
+    }
+    .pfContenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .pfContenedorTextos {
+            p {
+                @include tablet {
+                    font-size: 17px;
+                }
+                @include movil {
+                    font-size: 14px;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            padding-left: 1rem;
+        }
+        img {
+            width: 600px;
+            @include tablet {
+                width: 450px;
+            }
+            @include movil {
+                width: 230px;
+            }
+        }
+        @include tablet {
+            display: flex;
+            flex-direction: column;
         }
     }
 }
+

@@ -114,7 +114,7 @@ body {
 .textosComunes2 {
   text-align: center;
   font-size: 18px;
-  padding: 10px;
+  padding: 2px;
   font-weight: bold;
 }
 
@@ -561,32 +561,91 @@ body {
 }
 
 /* Preguntas frecuentes Pag */
-.pfContenedor {
+@media screen and (max-width: 768px) {
+  .preguntasInicio p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .preguntasInicio p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preguntasInicio h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preguntasInicio h2 {
+    font-size: 16px;
+  }
+}
+
+.preguntasInicio .pfContenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.preguntasInicio .pfContenedor .pfContenedorTextos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.pfContenedor__imagen {
-  width: 500px;
+  width: 85%;
+  padding-left: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .pfContenedor__imagen {
-    width: 400px;
+  .preguntasInicio .pfContenedor .pfContenedorTextos p {
+    font-size: 17px;
   }
 }
 
 @media screen and (max-width: 470px) {
-  .pfContenedor__imagen {
-    width: 350px;
+  .preguntasInicio .pfContenedor .pfContenedorTextos p {
+    font-size: 14px;
+  }
+}
+
+.preguntasInicio .pfContenedor img {
+  width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  .preguntasInicio .pfContenedor img {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .preguntasInicio .pfContenedor img {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preguntasInicio .pfContenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
