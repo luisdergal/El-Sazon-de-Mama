@@ -42,7 +42,26 @@
 /* Menu pag */
 
 .menuInicio {
+    h1 {
+        @include tablet {
+            font-size: 30px;
+        }
+    }
+    p {
+        @include tablet {
+            font-size: 17px;
+        }
+    }
     &__contenedor {
+        a {
+            text-decoration: none;
+            text-decoration: underline;
+            color: blueviolet;
+            text-shadow: 1px 1px 2px #000;
+            @include tablet {
+                font-size: 14px;
+            }
+        }
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -51,17 +70,23 @@
             flex-direction: column;
             align-items: center;
         }
-        img {
+        li {
+            font-size: 25px;
+            @include tablet {
+                font-size: 17px;
+            }
+        }
+        video {
             padding: 2rem;
-            width: 700px;
+            width: 750px;
             @include laptop {
                 width: 450px;
             }
             @include tablet {
-                width: 300px;
+                width: 100%px;
             }
             @include movil {
-                width: 270px;
+                width: 100%;
             }
         }
         .menuInicio_contenedorTextos {
@@ -100,6 +125,8 @@
     &__platos {
         padding-top: 1rem;
         padding-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         ul {
             list-style: none;
             border: 2px solid #f1f1f1;

@@ -60,21 +60,17 @@ body {
   }
 }
 
-.titulosDoc, .titulosDoc2 {
+.titulosDoc {
   font-size: 45px;
   text-align: center;
   padding: 30px;
   color: #923c61;
-  text-shadow: 2px 2px 2px #000;
-}
-
-.titulosDoc2 {
-  text-shadow: 2px 2px 2px greenyellow;
+  text-shadow: 2px 2px 3px #000;
 }
 
 .textosComunes, .textosComunes2W, .textosComunesW {
   text-align: center;
-  font-size: 18px;
+  font-size: 21px;
   padding: 10px;
 }
 
@@ -186,6 +182,18 @@ body {
 }
 
 /* Menu pag */
+@media screen and (max-width: 768px) {
+  .menuInicio h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menuInicio p {
+    font-size: 17px;
+  }
+}
+
 .menuInicio__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +205,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menuInicio__contenedor a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: blueviolet;
+  text-shadow: 1px 1px 2px #000;
+}
+
+@media screen and (max-width: 768px) {
+  .menuInicio__contenedor a {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -214,26 +235,36 @@ body {
   }
 }
 
-.menuInicio__contenedor img {
+.menuInicio__contenedor li {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .menuInicio__contenedor li {
+    font-size: 17px;
+  }
+}
+
+.menuInicio__contenedor video {
   padding: 2rem;
-  width: 700px;
+  width: 750px;
 }
 
 @media screen and (max-width: 982px) {
-  .menuInicio__contenedor img {
+  .menuInicio__contenedor video {
     width: 450px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .menuInicio__contenedor img {
-    width: 300px;
+  .menuInicio__contenedor video {
+    width: 100%px;
   }
 }
 
 @media screen and (max-width: 470px) {
-  .menuInicio__contenedor img {
-    width: 270px;
+  .menuInicio__contenedor video {
+    width: 100%;
   }
 }
 
@@ -297,6 +328,8 @@ body {
 .menuVegano__platos {
   padding-top: 1rem;
   padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .menuVegano__platos ul {
@@ -575,6 +608,10 @@ body {
 
 .navFooter__lista {
   list-style: none;
+}
+
+.navFooter__lista li {
+  padding: 2px;
 }
 
 .navFooter__lista li a {
