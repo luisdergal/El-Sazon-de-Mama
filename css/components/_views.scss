@@ -17,7 +17,7 @@
         a {
             img {
                 width: 150px;
-                padding: 5px;
+                padding-bottom: 4rem;
                 @include tablet {
                     width: 100px;
                 }
@@ -30,14 +30,25 @@
         }
     }
 
-    .ejemplosComidas div {
-        @include tablet {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+    .ejemplosComidas {
+        div {
+            @include tablet {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
         }
     }
+
+    .card {
+        transition: .7s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
 
 /* Menu pag */
 

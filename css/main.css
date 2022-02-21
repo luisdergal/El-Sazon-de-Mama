@@ -147,7 +147,7 @@ body {
 
 .pideYa__contenedor a img {
   width: 150px;
-  padding: 5px;
+  padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -179,6 +179,17 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.card {
+  transition: 0.7s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 /* Menu pag */
@@ -685,5 +696,11 @@ body {
 .navFooter__redes img {
   width: 30px;
   margin: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navFooter__redes img:hover {
+  width: 32px;
 }
 /*# sourceMappingURL=main.css.map */

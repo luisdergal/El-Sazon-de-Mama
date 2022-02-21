@@ -22,6 +22,10 @@
         img {
             width: 30px;
             margin: 10px;
+            transition: 0.5s;
+        }
+        img:hover {
+            width: 32px;
         }
     }
 }
