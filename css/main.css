@@ -524,44 +524,6 @@ body {
           justify-content: center;
 }
 
-.contactos img {
-  width: 550px;
-}
-
-@media screen and (max-width: 470px) {
-  .contactos img {
-    width: 220px;
-  }
-}
-
-@media screen and (max-width: 982px) {
-  .contactos img {
-    width: 400px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contactos img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.contactos img:hover {
-  -webkit-animation: swing;
-          animation: swing;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-}
-
 .contenedor {
   max-width: 1170px;
   padding: 1.5em;

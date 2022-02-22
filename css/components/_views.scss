@@ -243,25 +243,6 @@ $coloresveg: (
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    img {
-        width: 550px;
-        @include movil {
-            width: 220px;
-        }
-        @include laptop {
-            width: 400px;
-        }
-    
-        @include tablet {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    }
-    img:hover {
-        animation: swing;
-        animation-duration: 0.6s;
-    }
 }   
 
 .contenedor {
