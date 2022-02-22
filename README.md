@@ -7,7 +7,7 @@
 
 - 📫 How to reach me **luisandresdergal@gmail.com**
 
-- ⚡ Fun fact **I have a TikTok Account xD https://github.com/luisdergal/El-Sazon-de-Mama.git**
+- ⚡ Fun fact **I have a TikTok Account xD https://www.tiktok.com/@soyelpeluca**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
