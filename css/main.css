@@ -421,6 +421,25 @@ body {
   text-align: center;
 }
 
+.menuVegano__platos a {
+  text-decoration: none;
+  color: #fffb00;
+  text-shadow: 1px 1px 2px #000;
+  text-align: center;
+}
+
+.menuVegano__platos a p {
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menuVegano__platos a p:hover {
+  color: greenyellow;
+  font-size: 21px;
+}
+
 .dia--rosa {
   color: #fe4365;
   font-size: 30px;
