@@ -2,6 +2,29 @@
 
 /* Index pag */
 
+.hero {
+    background: linear-gradient( rgba(0,0,0, 0.5) ,rgba(255,255,255, 0.5)), url("../../media/images/carousel2.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: aliceblue;
+        text-shadow: 1px 1px 2px #000;
+        text-align: center;
+        p {
+            font-size: 20px;
+        }
+        }
+}
+
+
+
 .pideYa {
     &__contenedor {
         display: flex;
@@ -10,6 +33,7 @@
         flex-direction: column;
         p {
             font-size: 50px;
+            margin: 2rem;
             @include tablet {
                 font-size: 40px;
             }
@@ -17,7 +41,7 @@
         a {
             img {
                 width: 150px;
-                padding-bottom: 4rem;
+                margin: 2rem;
                 @include tablet {
                     width: 100px;
                 }
@@ -76,7 +100,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        @include tablet {
+        @include laptop {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -90,6 +114,9 @@
         video {
             padding: 2rem;
             width: 750px;
+            @media screen and (max-width: 1191px) {
+                width: 600px;
+            }
             @include laptop {
                 width: 450px;
             }
