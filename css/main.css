@@ -139,8 +139,8 @@ body {
 
 /* Index pag */
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 255, 255, 0.5))), url("https://i.ibb.co/MCtjxYb/carousel2.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), url("https://i.ibb.co/MCtjxYb/carousel2.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../media/images/carousel2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), url("../media/images/carousel2.jpg");
   height: 80vh;
   background-attachment: fixed;
   background-position: center;
@@ -166,6 +166,10 @@ body {
 
 .hero a p {
   font-size: 20px;
+}
+
+.hero a:hover {
+  color: #8e4162;
 }
 
 .pideYa__contenedor {
