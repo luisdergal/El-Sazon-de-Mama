@@ -321,6 +321,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .menuInicio__contenedor li span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .menuInicio__contenedor li {
     font-size: 17px;
   }

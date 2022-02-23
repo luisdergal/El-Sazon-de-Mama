@@ -113,6 +113,11 @@
             align-items: center;
         }
         li {
+            span {
+                @include tablet {
+                    font-size: 20px;
+                }
+            }
             font-size: 25px;
             @include tablet {
                 font-size: 17px;
