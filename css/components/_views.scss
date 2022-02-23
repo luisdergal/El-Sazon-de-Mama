@@ -261,7 +261,7 @@ $coloresveg: (
             flex-direction: column;
         }
         img {
-            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             @include tablet {
                 width: 450px;
             }
@@ -378,6 +378,8 @@ $coloresveg: (
         justify-content: space-evenly;
         .pfContenedorTextos {
             p {
+                animation: backInLeft;
+                animation-duration: 1.5s;
                 @include tablet {
                     font-size: 17px;
                 }
@@ -391,6 +393,8 @@ $coloresveg: (
             padding-left: 1rem;
         }
         img {
+            animation: backInRight;
+            animation-duration: 1.5s;
             width: 600px;
             @include tablet {
                 width: 450px;

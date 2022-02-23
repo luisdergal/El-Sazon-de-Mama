@@ -92,8 +92,15 @@
 
 .textosComunes2 {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     padding: 2px;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     color: #41393e;
+}
+
+.textosComunes3 {
+    text-justify: initial;
+    text-align: start;
+    margin: 1rem;
+    padding: 1rem;
 }

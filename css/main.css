@@ -134,10 +134,17 @@ body {
 
 .textosComunes2 {
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   padding: 2px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   color: #41393e;
+}
+
+.textosComunes3 {
+  text-justify: initial;
+  text-align: start;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 /* Index pag */
@@ -560,7 +567,8 @@ body {
 }
 
 .envios__contenedor img {
-  padding: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -712,6 +720,13 @@ body {
   padding-left: 1rem;
 }
 
+.preguntasInicio .pfContenedor .pfContenedorTextos p {
+  -webkit-animation: backInLeft;
+          animation: backInLeft;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
 @media screen and (max-width: 768px) {
   .preguntasInicio .pfContenedor .pfContenedorTextos p {
     font-size: 17px;
@@ -725,6 +740,10 @@ body {
 }
 
 .preguntasInicio .pfContenedor img {
+  -webkit-animation: backInRight;
+          animation: backInRight;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   width: 600px;
 }
 
