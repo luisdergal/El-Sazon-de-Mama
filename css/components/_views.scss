@@ -153,6 +153,14 @@
 /* Menu Vegano pag */
 
 .menuVegano {
+    h1 {
+        animation: color-change 4s infinite;
+      }
+      
+      @keyframes color-change {
+        0% { color: #923c61; }
+        100% { color: #00ca2c; }
+      }
     background: url(https://i.ibb.co/q9YKywB/hamburguesaveganablur.jpg);
     background-position: center;
     background-size: cover;

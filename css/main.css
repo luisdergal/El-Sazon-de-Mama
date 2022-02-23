@@ -382,6 +382,29 @@ body {
   background-repeat: no-repeat;
 }
 
+.menuVegano h1 {
+  -webkit-animation: color-change 4s infinite;
+          animation: color-change 4s infinite;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: #923c61;
+  }
+  100% {
+    color: #00ca2c;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #923c61;
+  }
+  100% {
+    color: #00ca2c;
+  }
+}
+
 .menuVegano__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
