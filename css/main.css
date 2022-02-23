@@ -419,12 +419,19 @@ body {
       align-content: center;
 }
 
+.menuVegano__contenedor p {
+  -webkit-animation: fadeInTopLeft;
+          animation: fadeInTopLeft;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
 .menuVegano__contenedor img {
   width: 140px;
   -webkit-animation: fadeInRight;
           animation: fadeInRight;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 5.5s;
+          animation-duration: 5.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -446,6 +453,10 @@ body {
 }
 
 .menuVegano__platos {
+  -webkit-animation: fadeInBottomLeft;
+          animation: fadeInBottomLeft;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
   padding-top: 1rem;
   padding-bottom: 3rem;
   padding-left: 1rem;

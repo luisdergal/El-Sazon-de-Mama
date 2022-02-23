@@ -170,10 +170,14 @@
         justify-content: space-evenly;
         align-items: center;
         align-content: center;
+        p {
+            animation: fadeInTopLeft;
+            animation-duration: 3.5s;
+        }
         img {
             width: 140px;
             animation: fadeInRight;
-            animation-duration: 5s;
+            animation-duration: 5.5s;
         }
         @include tablet {
             display: flex;
@@ -183,6 +187,8 @@
         }
     }
     &__platos {
+        animation: fadeInBottomLeft;
+        animation-duration: 3.5s;
         padding-top: 1rem;
         padding-bottom: 3rem;
         padding-left: 1rem;
