@@ -74,6 +74,8 @@ body {
   text-align: center;
   font-size: 21px;
   padding: 10px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .subtitulo {
@@ -134,7 +136,8 @@ body {
   text-align: center;
   font-size: 18px;
   padding: 2px;
-  font-weight: bold;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  color: #41393e;
 }
 
 /* Index pag */
@@ -272,10 +275,15 @@ body {
           justify-content: center;
 }
 
+.menuInicio__contenedor a:hover {
+  color: aliceblue;
+  -webkit-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
 .menuInicio__contenedor a {
   text-decoration: none;
-  text-decoration: underline;
-  color: blueviolet;
+  color: #923c61;
   text-shadow: 1px 1px 2px #000;
 }
 
@@ -475,10 +483,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -496,6 +506,13 @@ body {
 .iframe__lista {
   padding: 50px;
   list-style: none;
+  text-align: center;
+}
+
+.iframe__lista li {
+  font-size: 19px;
+  font-style: italic;
+  font-style: oblique;
 }
 
 .envios__texto {
@@ -509,6 +526,37 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 982px) {
+  .envios__contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .envios__contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .envios__contenedor img {
@@ -540,7 +588,7 @@ body {
 }
 
 .contenedor {
-  max-width: 1170px;
+  width: 1000px;
   padding: 1.5em;
   color: white;
 }

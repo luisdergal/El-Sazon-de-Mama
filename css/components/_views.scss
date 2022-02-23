@@ -91,10 +91,13 @@
         }
     }
     &__contenedor {
+        a:hover {
+            color: aliceblue;
+            transition: color 1s ease-out;
+        }
         a {
             text-decoration: none;
-            text-decoration: underline;
-            color: blueviolet;
+            color: #923c61;
             text-shadow: 1px 1px 2px #000;
             @include tablet {
                 font-size: 14px;
@@ -221,8 +224,8 @@ $coloresveg: (
 
 .iframe {
     display: flex;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
     @include tablet {
         display: flex;
         flex-direction: column;
@@ -230,6 +233,12 @@ $coloresveg: (
     &__lista {
         padding: 50px;
         list-style: none;
+        text-align: center;
+        li {
+            font-size: 19px;
+            font-style: italic;
+            font-style: oblique;
+        }
     }
 }
 
@@ -241,7 +250,16 @@ $coloresveg: (
     &__contenedor {
         display: flex;
         justify-content: center;
-
+        flex-direction: row;
+        align-items: center;
+        @include laptop {
+            display: flex;
+            flex-direction: column;
+        }
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
         img {
             padding: 20px;
             @include tablet {
@@ -261,7 +279,7 @@ $coloresveg: (
 }   
 
 .contenedor {
-    max-width: 1170px;
+    width: 1000px;
     padding: 1.5em;
     color: white;
 
