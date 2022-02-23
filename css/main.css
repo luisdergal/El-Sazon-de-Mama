@@ -392,6 +392,10 @@ body {
 
 .menuVegano__contenedor img {
   width: 140px;
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 @media screen and (max-width: 768px) {

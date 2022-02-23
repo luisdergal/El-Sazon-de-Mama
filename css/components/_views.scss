@@ -159,6 +159,8 @@
         align-content: center;
         img {
             width: 140px;
+            animation: fadeInRight;
+            animation-duration: 5s;
         }
         @include tablet {
             display: flex;
