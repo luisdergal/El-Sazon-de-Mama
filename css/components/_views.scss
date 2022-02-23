@@ -173,6 +173,9 @@
         p {
             animation: fadeInTopLeft;
             animation-duration: 3.5s;
+            @include movil {
+                animation: none;
+                }
         }
         img {
             width: 140px;
@@ -189,6 +192,9 @@
     &__platos {
         animation: fadeInBottomLeft;
         animation-duration: 3.5s;
+        @include movil {
+        animation: none;
+        }
         padding-top: 1rem;
         padding-bottom: 3rem;
         padding-left: 1rem;
