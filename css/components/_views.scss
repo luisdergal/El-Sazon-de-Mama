@@ -18,7 +18,7 @@
         text-shadow: 1px 1px 2px #000;
         text-align: center;
         p {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
     }
     a:hover {
@@ -101,7 +101,7 @@
             color: #923c61;
             text-shadow: 1px 1px 2px #000;
             @include tablet {
-                font-size: 14px;
+                font-size: 0.875rem;
             }
         }
         display: flex;
@@ -116,10 +116,10 @@
         li {
             span {
                 @include tablet {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                 }
             }
-            font-size: 25px;
+            font-size: 1.563rem;
             @include tablet {
                 font-size: 17px;
             }
@@ -212,7 +212,7 @@
             background-color: rgb(0,0,0);
             background-color: rgba(0,0,0, 0.4);
             li {
-                font-size: 20px;
+                font-size: 1.25rem;
                 color: antiquewhite;
                 transition: 2s;
                 padding: 5px;
@@ -227,13 +227,13 @@
         text-align: center;
         
         p {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: bold;
             transition: 0.5s;
         }
         p:hover {
             color: greenyellow;
-            font-size: 21px;
+            font-size: 1.313rem;
         }
         }
     }
@@ -250,7 +250,7 @@ $coloresveg: (
 @each $name, $color in $coloresveg {
     .dia--#{$name} {
         color: $color;
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: bold;
     }
 }
@@ -270,7 +270,7 @@ $coloresveg: (
         list-style: none;
         text-align: center;
         li {
-            font-size: 19px;
+            font-size: 1.188rem;
             font-style: italic;
             font-style: oblique;
         }
@@ -392,10 +392,10 @@ $coloresveg: (
 .preguntasInicio{
     p {
         @include tablet {
-            font-size: 19px;
+            font-size: 1.188rem;
         }
         @include movil {
-            font-size: 14px;
+            font-size: 0.875rem;
         }
     }
     h1 {
@@ -405,7 +405,7 @@ $coloresveg: (
     }
     h2 {
         @include tablet {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
     .pfContenedor {
@@ -417,10 +417,10 @@ $coloresveg: (
                 animation: backInLeft;
                 animation-duration: 1.5s;
                 @include tablet {
-                    font-size: 17px;
+                    font-size: 1.063rem;
                 }
                 @include movil {
-                    font-size: 14px;
+                    font-size: 0.875rem;
                 }
             }
             display: flex;
