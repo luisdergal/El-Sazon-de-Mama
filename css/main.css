@@ -280,6 +280,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menuInicio__contenedor a:hover {
@@ -361,7 +364,7 @@ body {
   }
 }
 
-.menuInicio__contenedor .menuInicio_contenedorTextos {
+.menuInicio__contenedor .menuInicio__contenedorTextos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,6 +375,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 2px solid #000000;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.3);
 }
 
 /* Menu Vegano pag */
