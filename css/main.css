@@ -175,11 +175,18 @@ body {
 }
 
 .hero a p {
-  font-size: 1.25rem;
+  font-size: 1.27rem;
 }
 
 .hero a:hover {
   color: #8e4162;
+}
+
+.hero i:hover {
+  -webkit-animation: heartBeat;
+          animation: heartBeat;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .pideYa__contenedor {

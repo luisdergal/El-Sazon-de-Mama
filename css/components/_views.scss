@@ -18,11 +18,15 @@
         text-shadow: 1px 1px 2px #000;
         text-align: center;
         p {
-            font-size: 1.25rem;
+            font-size: 1.27rem;
         }
     }
     a:hover {
         color: #8e4162;
+    }
+    i:hover {
+        animation: heartBeat;
+        animation-duration: 2s;
     }
 }
 
