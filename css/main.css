@@ -78,6 +78,10 @@ body {
   margin-right: 3rem;
 }
 
+.shadowComun {
+  text-shadow: px 2px 1px #979696;
+}
+
 .subtitulo {
   font-size: 31px;
   font-weight: italic;
@@ -208,6 +212,7 @@ body {
 .pideYa__contenedor p {
   font-size: 50px;
   margin: 2rem;
+  text-shadow: 3px 3px 3px #868686;
 }
 
 @media screen and (max-width: 768px) {
@@ -219,6 +224,8 @@ body {
 .pideYa__contenedor a img {
   width: 150px;
   margin: 2rem;
+  -webkit-filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.7));
 }
 
 @media screen and (max-width: 768px) {
@@ -434,8 +441,8 @@ body {
 }
 
 .menuVegano__contenedor p {
-  -webkit-animation: fadeInTopLeft;
-          animation: fadeInTopLeft;
+  -webkit-animation: slideInLeft;
+          animation: slideInLeft;
   -webkit-animation-duration: 3.5s;
           animation-duration: 3.5s;
 }
@@ -474,8 +481,8 @@ body {
 }
 
 .menuVegano__platos {
-  -webkit-animation: fadeInBottomLeft;
-          animation: fadeInBottomLeft;
+  -webkit-animation: slideInUp;
+          animation: slideInUp;
   -webkit-animation-duration: 3.5s;
           animation-duration: 3.5s;
   padding-top: 1rem;
