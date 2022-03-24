@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [El Sazón de Mamá](https://github.com/luisdergal/El-Sazon-de-Mama.git)
 
-- 🌱 I’m currently learning **HTML, CSS, SASS, BOOTSTRAP and JS soon.**
+- 🌱 I’m currently learning **HTML, CSS, SASS, BOOTSTRAP and JS.**
 
 - 📫 How to reach me **luisandresdergal@gmail.com**
 
