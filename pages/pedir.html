@@ -42,6 +42,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet" />
   <!--animateCss-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--tOASTIFY-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <!--CSS-->
   <link rel="stylesheet" href="../css/main.css" />
   <!--<link rel="stylesheet" href="../css/respaldo.css" />-->
@@ -91,17 +93,41 @@
 
           <section>
               <div class="container">
-                <h1> CARRITO </h1>
+                <div class="d-grid gap-2 col-6 mx-auto m-4" >
+                <h1 style="text-align: center;"> PEDIR A DOMICILIO </h1>
+                </div>
+                <div id="contenedorConfirmar"> </div>
                 <hr>
-                <div class="row" id="items"></div>
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Menú:</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acción</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody id="items"></tbody>
+                    <tfoot>
+                      <tr id="footer">
+                        <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+
+                <div class="row" id="cards"></div>
               </div>
+
               <template id="template-card">
                 <div class="col-12 mb-2 col-md-4">
                   <div class="card">
                     <img src="" alt="" class="card-img-top" >
-                    <div class="card-body">
-                      <h5>Titulo</h5>
-                      <p>precio</p>
+                    <div class="card-body d-grid gap-2 col-6 mx-auto">
+                      <h5 style="text-align: center;">Titulo</h5>
+                      <p style="text-align: center;">precio</p>
+                      <p2 style="text-align: center;">IVA incluído</p2>
                       <button class="btn btn-dark">Comprar</button>
                     </div>
                   </div>
@@ -117,7 +143,7 @@
                     </button>
                 </td>
                 <td class="font-weight-bold">$ <span>5000</span></td>
-            </template>
+                </template>
             
             <template id="template-carrito">
               <tr>
@@ -159,5 +185,7 @@
       <script src="../script.js"></script>
       <!-- BootStrap -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <!-- Toastify -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
   </html>
