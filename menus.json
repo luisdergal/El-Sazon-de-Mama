@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "menu": "normal",
+    "precio": 75,
+    "thumbnailUrl": "https://i.ibb.co/xqzV2PT/normal.jpg"
+  },
+  {
+    "id": 2,
+    "menu": "vegetariano",
+    "precio": 70,
+    "thumbnailUrl": "https://i.ibb.co/cwggmtx/vegana.jpg"
+  },
+  {
+    "id": 3,
+    "menu": "comercial",
+    "precio": 65,
+    "thumbnailUrl": "https://i.ibb.co/3hKBndT/comercial.jpg"
+  },
+  {
+    "id": 4,
+    "menu": "otro",
+    "precio": 85,
+    "thumbnailUrl": "https://i.ibb.co/ckhJZJR/otro.jpg"
+  },
+  {
+    "id": 5,
+    "menu": "tortillas extra",
+    "precio": 10,
+    "thumbnailUrl": "https://i.ibb.co/60d14Wv/tortilla.jpg"
+  },
+  {
+    "id":6,
+    "menu": "agua extra",
+    "precio": 15,
+    "thumbnailUrl": "https://i.ibb.co/k3RjV2B/awa.jpg"
+  }
+]
