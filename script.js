@@ -25,7 +25,6 @@ cards.addEventListener ("click", e => {
 })
 
 
-
 items.addEventListener("click", e => {
     btnAccion(e)
 })
@@ -151,6 +150,19 @@ const cambiarFooter = () => {
     })
 }
 
+const btnConfirmar = document.getElementById("btnConfirmar")
+btnConfirmar.addEventListener("click", () => {
+    Swal.fire({
+        title: '¡LISTO! <3',
+        text: 'TU PEDIDO HA SIDO CONFIRMADO Y ESTÁ SIENDO PREPARADO.',
+        imageUrl: 'https://i.giphy.com/media/dAzkOoCgoFHtCAdFhe/giphy.webp',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+})
+    
+
 const btnAccion = e => {
     if(e.target.classList.contains("btn-info")) {
         const producto = carrito[e.target.dataset.id]
@@ -167,8 +179,7 @@ const btnAccion = e => {
             style: {
               background: "linear-gradient(to right, #00b09b, #96c93d)",
             },
-          }).showToast();
-        
+          }).showToast();       
     }
 
     if(e.target.classList.contains("btn-danger")) {
