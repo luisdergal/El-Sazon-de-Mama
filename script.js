@@ -62,7 +62,7 @@ const agregarCarrito = e => {
         setCarrito(e.target.parentElement)
         Toastify({
             text: "Producto agregado al carrito correctamente.",
-            duration: 3000,
+            duration: 700,
             close: true,
             gravity: "bottom", // `top` or `bottom`
             position: "right", // `left`, `center` or `right`
@@ -157,6 +157,17 @@ const btnAccion = e => {
         producto.cantidad++
         carrito[e.target.dataset.id] = {...producto}
         crearCarrito()
+        Toastify({
+            text: "Producto agregado al carrito correctamente.",
+            duration: 700,
+            close: true,
+            gravity: "bottom", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+          }).showToast();
         
     }
 
@@ -167,6 +178,17 @@ const btnAccion = e => {
             delete carrito[e.target.dataset.id]
         }
         crearCarrito()
+        Toastify({
+            text: "Producto eliminado correctamente.",
+            duration: 3000,
+            close: true,
+            gravity: "bottom", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "#C84630",
+            },
+          }).showToast();
     }
     e.stopPropagation()
 }
