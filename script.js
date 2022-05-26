@@ -151,16 +151,40 @@ const cambiarFooter = () => {
 }
 
 const btnConfirmar = document.getElementById("btnConfirmar")
+
 btnConfirmar.addEventListener("click", () => {
+    if(Object.keys(carrito).length === 0)
+    {
+        Swal.fire({
+            title: '¡Error!',
+            text: 'No hay nada seleccionado en el carrito.',
+            imageUrl: 'https://i.giphy.com/media/PTUK1MSNWmjt5p7VbL/giphy.webp',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
+    } else
     Swal.fire({
-        title: '¡LISTO! <3',
-        text: 'TU PEDIDO HA SIDO CONFIRMADO Y ESTÁ SIENDO PREPARADO.',
-        imageUrl: 'https://i.giphy.com/media/dAzkOoCgoFHtCAdFhe/giphy.webp',
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: 'Custom image',
+        title: '¿Confirmar pedido? uwu',
+        showCancelButton: true,
+        confirmButtonText: 'Confirmar.',
+        cancelButtonText: 'Falta algo.',
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: '¡LISTO! <3',
+                text: 'TU PEDIDO HA SIDO CONFIRMADO Y ESTÁ SIENDO PREPARADO.',
+                imageUrl: 'https://i.giphy.com/media/dAzkOoCgoFHtCAdFhe/giphy.webp',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })
+        }
       })
 })
+
+
     
 
 const btnAccion = e => {
