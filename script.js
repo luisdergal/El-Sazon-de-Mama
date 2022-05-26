@@ -137,7 +137,7 @@ const cambiarFooter = () => {
         carrito = {}
         crearCarrito()
         Toastify({
-            text: "Productos eliminados correctamente.",
+            text: "Carrito vaciado correctamente.",
             duration: 3000,
             close: true,
             gravity: "bottom", // `top` or `bottom`
@@ -209,9 +209,9 @@ const btnAccion = e => {
     if(e.target.classList.contains("btn-danger")) {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad--
-        if (producto.cantidad === 0 ) {
-            delete carrito[e.target.dataset.id]
-        }
+        //// OPERADOR TERNARIO
+        producto.cantidad === 0 ? delete carrito[e.target.dataset.id] :
+
         crearCarrito()
         Toastify({
             text: "Producto eliminado correctamente.",
