@@ -4,7 +4,6 @@ const footer = document.getElementById("footer")
 const templateCard = document.getElementById("template-card").content
 const templateFooter = document.getElementById("template-footer").content
 const templateCarrito = document.getElementById("template-carrito").content
-const confirmarBoton = document.getElementById("contenedorConfirmar")
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
@@ -23,18 +22,9 @@ document.addEventListener("DOMContentLoaded",() => {
 })
 cards.addEventListener ("click", e => {
     agregarCarrito(e)
-    Toastify({
-        text: "Producto agregado al carrito correctamente.",
-        duration: 3000,
-        close: true,
-        gravity: "bottom", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
-        },
-      }).showToast();
 })
+
+
 
 items.addEventListener("click", e => {
     btnAccion(e)
@@ -68,10 +58,19 @@ const crearCard = data => {
 }
 
 const agregarCarrito = e => {
-    // console.log(e.target)
-    // console.log(e.target.classList.contains("btn-dark"))
     if(e.target.classList.contains("btn-dark")) {
         setCarrito(e.target.parentElement)
+        Toastify({
+            text: "Producto agregado al carrito correctamente.",
+            duration: 3000,
+            close: true,
+            gravity: "bottom", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+          }).showToast();
     }
     e.stopPropagation()
 }
@@ -171,6 +170,8 @@ const btnAccion = e => {
     }
     e.stopPropagation()
 }
+
+
 
 
 
