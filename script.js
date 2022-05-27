@@ -100,7 +100,7 @@ const crearCarrito = () => {
         templateCarrito.querySelectorAll("td")[1].textContent = producto.cantidad
         templateCarrito.querySelector(".btn-info").dataset.id = producto.id
         templateCarrito.querySelector(".btn-danger").dataset.id = producto.id
-        templateCarrito.querySelector("span").textContent = producto.cantidad * producto.precio;
+        templateCarrito.querySelector("span").textContent = (producto.cantidad * producto.precio).toFixed(2);
           const clone = templateCarrito.cloneNode(true)
           fragment.appendChild(clone)
     })
@@ -126,7 +126,7 @@ const cambiarFooter = () => {
     
 
     templateFooter.querySelectorAll("td")[0].textContent = nCantidad
-    templateFooter.querySelector("span").textContent = nPrecio
+    templateFooter.querySelector("span").textContent = nPrecio.toFixed(2)
 
     const clone = templateFooter.cloneNode(true)
     fragment.appendChild(clone)
