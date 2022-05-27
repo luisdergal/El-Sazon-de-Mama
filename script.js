@@ -141,7 +141,7 @@ const cambiarFooter = () => {
     carrito = {};
     crearCarrito();
     Toastify({
-      text: "Carrito vaciado correctamente.",
+      text: "Se han eliminado todas las opciones.",
       duration: 3000,
       close: true,
       gravity: "bottom", // `top` or `bottom`
