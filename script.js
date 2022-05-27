@@ -91,7 +91,6 @@ const setCarrito = (objeto) => {
 };
 
 const crearCarrito = () => {
-<<<<<<< HEAD
   // console.log(carrito)
   items.innerHTML = "";
   Object.values(carrito).forEach((producto) => {
@@ -101,26 +100,11 @@ const crearCarrito = () => {
     templateCarrito.querySelector(".btn-info").dataset.id = producto.id;
     templateCarrito.querySelector(".btn-danger").dataset.id = producto.id;
     templateCarrito.querySelector("span").textContent =
-      producto.cantidad * producto.precio;
+      (producto.cantidad * producto.precio).toFixed(2);
     const clone = templateCarrito.cloneNode(true);
     fragment.appendChild(clone);
   });
   items.appendChild(fragment);
-=======
-    // console.log(carrito)
-    items.innerHTML = ""
-    Object.values(carrito).forEach((producto) => {
-        templateCarrito.querySelector("th").textContent = producto.id
-        templateCarrito.querySelectorAll("td")[0].textContent = producto.menu
-        templateCarrito.querySelectorAll("td")[1].textContent = producto.cantidad
-        templateCarrito.querySelector(".btn-info").dataset.id = producto.id
-        templateCarrito.querySelector(".btn-danger").dataset.id = producto.id
-        templateCarrito.querySelector("span").textContent = (producto.cantidad * producto.precio).toFixed(2);
-          const clone = templateCarrito.cloneNode(true)
-          fragment.appendChild(clone)
-    })
-    items.appendChild(fragment)
->>>>>>> mejoras
 
   cambiarFooter();
 
@@ -145,13 +129,8 @@ const cambiarFooter = () => {
     0
   );
 
-<<<<<<< HEAD
   templateFooter.querySelectorAll("td")[0].textContent = nCantidad;
-  templateFooter.querySelector("span").textContent = nPrecio;
-=======
-    templateFooter.querySelectorAll("td")[0].textContent = nCantidad
-    templateFooter.querySelector("span").textContent = nPrecio.toFixed(2)
->>>>>>> mejoras
+  templateFooter.querySelector("span").textContent = nPrecio.toFixed(2);
 
   const clone = templateFooter.cloneNode(true);
   fragment.appendChild(clone);
