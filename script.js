@@ -62,9 +62,9 @@ const agregarCarrito = (e) => {
       text: "Producto agregado al carrito correctamente.",
       duration: 700,
       close: true,
-      gravity: "bottom", // `top` or `bottom`
-      position: "right", // `left`, `center` or `right`
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      gravity: "bottom",
+      position: "right", 
+      stopOnFocus: true, 
       style: {
         background: "linear-gradient(to right, #00b09b, #96c93d)",
       },
@@ -74,7 +74,6 @@ const agregarCarrito = (e) => {
 };
 
 const setCarrito = (objeto) => {
-  // console.log(objeto)
   const producto = {
     id: objeto.querySelector(".btn-dark").dataset.id,
     menu: objeto.querySelector("h5").textContent,
@@ -91,7 +90,6 @@ const setCarrito = (objeto) => {
 };
 
 const crearCarrito = () => {
-  // console.log(carrito)
   items.innerHTML = "";
   Object.values(carrito).forEach((producto) => {
     templateCarrito.querySelector("th").textContent = producto.id;
@@ -115,7 +113,7 @@ const cambiarFooter = () => {
   footer.innerHTML = "";
   if (Object.keys(carrito).length === 0) {
     footer.innerHTML = `
-        <th scope="row" colspan="5">No hay nada seleccionado aún.</th>
+        <th scope="row" colspan="5"><span style="font-weight: lighter;">No hay menú seleccionado ¡PIDE ALGO DELICIOSO YA! </span> </th>
         `;
     return;
   }
@@ -173,7 +171,6 @@ btnConfirmar.addEventListener("click", () => {
       confirmButtonText: "Confirmar.",
       cancelButtonText: "Falta algo.",
     }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         Swal.fire({
           title: "¡LISTO! <3",
@@ -197,9 +194,9 @@ const btnAccion = (e) => {
       text: "Producto agregado al carrito correctamente.",
       duration: 700,
       close: true,
-      gravity: "bottom", // `top` or `bottom`
-      position: "right", // `left`, `center` or `right`
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      gravity: "bottom", 
+      position: "right", 
+      stopOnFocus: true, 
       style: {
         background: "linear-gradient(to right, #00b09b, #96c93d)",
       },
@@ -217,9 +214,9 @@ const btnAccion = (e) => {
       text: "Producto eliminado correctamente.",
       duration: 3000,
       close: true,
-      gravity: "bottom", // `top` or `bottom`
-      position: "right", // `left`, `center` or `right`
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      gravity: "bottom", 
+      position: "right", 
+      stopOnFocus: true, 
       style: {
         background: "#C84630",
       },
