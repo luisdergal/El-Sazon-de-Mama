@@ -7,10 +7,12 @@ const templateCarrito = document.getElementById("template-carrito").content;
 const fragment = document.createDocumentFragment();
 let carrito = {};
 
+/// OPERACIONES PARA DAR RESULTADOS
 const suma = (a, b) => a + b;
 
 const iva = (x) => x * 0.16;
 
+///// FETCH 
 document.addEventListener("DOMContentLoaded", () => {
   datosFetch();
   if (localStorage.getItem("carrito")) {
@@ -37,6 +39,7 @@ const datosFetch = async () => {
   }
 };
 
+///// CREACIÓN DE CARDS EN BOOSTRAP
 const crearCard = (data) => {
   data.forEach((producto) => {
     templateCard.querySelector("h5").textContent = producto.menu;
@@ -55,6 +58,7 @@ const crearCard = (data) => {
   cards.appendChild(fragment);
 };
 
+//// BOTÓN AGREGAR AL CARRITO
 const agregarCarrito = (e) => {
   if (e.target.classList.contains("btn-dark")) {
     setCarrito(e.target.parentElement);
@@ -95,7 +99,7 @@ const crearCarrito = () => {
     templateCarrito.querySelector("th").textContent = producto.id;
     templateCarrito.querySelectorAll("td")[0].textContent = producto.menu;
     templateCarrito.querySelectorAll("td")[1].textContent = producto.cantidad;
-    templateCarrito.querySelector(".btn-info").dataset.id = producto.id;
+    templateCarrito.querySelector(".btn-primary").dataset.id = producto.id;
     templateCarrito.querySelector(".btn-danger").dataset.id = producto.id;
     templateCarrito.querySelector("span").textContent =
       (producto.cantidad * producto.precio).toFixed(2);
@@ -106,8 +110,13 @@ const crearCarrito = () => {
 
   cambiarFooter();
 
+  ///// AGREGAR INFO AL LOCAL STORAGE
   localStorage.setItem("carrito", JSON.stringify(carrito));
 };
+
+
+
+///// Interacción de elecciones de usuario
 
 const cambiarFooter = () => {
   footer.innerHTML = "";
@@ -117,6 +126,9 @@ const cambiarFooter = () => {
         `;
     return;
   }
+
+  //// TOTAL USANDO LIBRERÍAS
+
 
   const nCantidad = Object.values(carrito).reduce(
     (acc, { cantidad }) => acc + cantidad,
@@ -152,6 +164,8 @@ const cambiarFooter = () => {
   });
 };
 
+//// BOTÓN CONFIRMAR PEDIDO.
+
 const btnConfirmar = document.getElementById("btnConfirmar");
 
 btnConfirmar.addEventListener("click", () => {
@@ -185,7 +199,7 @@ btnConfirmar.addEventListener("click", () => {
 });
 
 const btnAccion = (e) => {
-  if (e.target.classList.contains("btn-info")) {
+  if (e.target.classList.contains("btn-primary")) {
     const producto = carrito[e.target.dataset.id];
     producto.cantidad++;
     carrito[e.target.dataset.id] = { ...producto };
